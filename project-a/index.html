@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Home Page</title>
+	<link rel="stylesheet" type="text/css" href="/project-a/style.css">
+
+</head>
+
+<body>
+	<header>commit -m "first commit"
+		<nav>
+			<ul>
+        <li class="logo">
+          <img src="/project-a/foodbrooslogo (2).jpg" alt="Logo">
+        </li>
+				<li><a href="/project-a/index.html">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#popup-form" id="reservations-link">Reservations</a></li>
+				<li><a href="https://www.google.com/maps/@11.4016608,79.6565144,13z" target="_blank"> Get Direction</a></li>
+				<li><a href="#contact" id="conduct-us-link">Conduct Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+            <img class="Logo" src="/project-a/pngwing.com.png" alt="foodbroos logo">
+			<h1>Welcome to Our Food Bross  Services</h1>
+			<p class="SecondPara">Experience the best in fine services with our low price  and exceptional service.</p>
+            <p>Catering Services 24 x 7 Hours</p>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSei6q469hcUOVpl2A1FXXKMfQ0UwimkcsjIZOrw3Xr-jiUzrw/viewform" class="btn">Place Order</a>
+		</section>
+        <div id="popup-form" class="hidden">
+            <button id="close-button" >X</button>
+            <h2>Make a Reservation</h2>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" >
+              <label for="Persons Count">How many persons want to Serve:</label>
+              <input type="number" id="number" name="numbeer" required>
+              <label for="date">Date of function:</label>
+              <input type="date" id="date" name="date" required>
+              <label for="time">Time:</label>
+              <input type="time" id="time" name="time" required>
+              <label for="comments">Comments:</label>
+              <textarea id="comments" name="comments"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+	</main>
+<div class="GoogleImage">
+  <div >
+    <h2>Get Directions</h2>
+    <a href="https://www.google.com/maps/@11.4016608,79.6565144,13z" target="_blank">
+    <img class="google-map" src="/project-a/cdm-Screenshot (7).png" alt="Google Map">
+  </a>
+  </div>
+</div>
+
+    <div class="container" id="contact" >
+        <h2 class="conduct-us"> Contact Us</h2>
+            <div>Food bross and Services</div>
+            <div>Phone No : 8754600958 || 7094334647
+            </div>
+            <div>TheFoodBros உங்கள் வீட்டு திருமணங்கள் அல்லது 
+              வேறு எந்த நிகழ்ச்சிகளுக்கும் சிறந்த முறையில் உணவு பரிமாறப்படும் ..</div>
+            <div>
+                <a id="atag" href="mailto:thefoodbros4647@gmail.com?subject=Website%20Inquiry&body=Hello%20there,">Mail Us</a>
+            </div>
+    </div>
+</body>
+<script> 
+    // Get the reservations link and popup form
+    const reservationsLink = document.getElementById('reservations-link');
+    const popupForm = document.getElementById('popup-form');
+    const closeButton = document.getElementById('close-button');
+    
+    closeButton.addEventListener('click', () => {
+    popupForm.classList.add('hidden');
+    });
+    // Show the popup form when the reservations link is clicked
+    reservationsLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      popupForm.classList.remove('hidden');
+      popupForm.scrollIntoView({ behavior: 'smooth' });
+    });
+
+
+
+
+    // Select the Conduct Us link
+const conductUsLink = document.querySelector('#conduct-us-link');
+
+// Add a click event listener to the link
+conductUsLink.addEventListener('click', (event) => {
+  // Prevent the default link behavior
+  event.preventDefault();
+
+  // Get the target element by its ID
+  const targetElement = document.querySelector(event.target.hash);
+
+  // Scroll to the target element
+  targetElement.scrollIntoView({ behavior: 'smooth' });
+});
+
+    
+        </script>
+</html>

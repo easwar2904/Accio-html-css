@@ -1,0 +1,41 @@
+#popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+  }
+  
+  #popup-form.hidden {
+    display: none;
+  }
+  
+  #popup-form h2 {
+    margin-top: 0;
+  }
+  
+  #popup-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #popup-form input,
+  #popup-form textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #popup-form button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

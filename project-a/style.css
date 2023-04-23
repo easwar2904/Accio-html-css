@@ -1,0 +1,187 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+nav {
+    
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+    font-style: italic;
+}
+
+nav a {
+	text-decoration: none;
+	color: #1b172e;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: #f00;
+  box-shadow: 15px;
+}
+
+main {
+  
+	margin-top: 100px;
+	padding: 50px;
+	background-color:#f7dede;
+	text-align: center;
+}
+.Logo{
+   
+        width: 50%;
+        height: auto;
+      
+}
+
+section {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+    font-size: 39px;
+    margin-bottom: 20px;
+    color: #c32d2d;
+}
+
+p {
+	font-size: 18px;
+    font-weight: lighter;
+}
+
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #f00;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #f00;
+	border: 1px solid #f00;
+}
+.Food-bross{
+    color: #f00;
+    font-weight: bolder;
+}
+
+
+
+
+/* popup form csss */
+
+#popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 49px;
+    box-shadow: 0 4px 8px rgba(29, 212, 127, 0.2);
+  }
+  
+  #popup-form.hidden {
+    display: none;
+  }
+  
+  #popup-form h2 {
+    margin-top: 0;
+  }
+  
+  #popup-form label {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  
+  #popup-form input,
+  #popup-form textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #popup-form button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #close-button{
+    background-color: #f00;
+    position: absolute;
+    top: 1px;
+    right: -3px;
+    font-size: 19px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #atag{
+    text-decoration:none;
+    color: #2100d9;
+  }
+  
+  /* google maps */
+
+  .GoogleImage{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 56%;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  /* Contack details */
+.conduct-us{
+    position: relative;
+    left: -10px;
+}
+  .container{
+    line-height: 1.5em;
+    padding-bottom: 50px;
+    font-size: larger;
+  }
+  #contact {
+   position: absolute;
+    left: 10%;
+  } 
